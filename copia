@@ -1,0 +1,31 @@
+# Prototipo de Modernización - Sistema Legado de Gestión Comercial
+
+## Descripción del Proyecto
+Este software es un prototipo funcional desarrollado en Python empleando el paradigma de programación estructurada. Su finalidad es solventar los problemas de consistencia, duplicación y pérdida de datos que experimenta actualmente una distribuidora comercial en su control operativo de mercancías.
+
+## Problema que busca resolver
+* **Desorganización de inventario:** Migración del almacenamiento de texto plano informal y hojas de cálculo manuales inconsistentes.
+* **Falta de integridad en datos:** Previene errores de formato en códigos, nombres vacíos, valores monetarios negativos o stock físico por debajo de cero.
+* **Control de concurrencia elemental:** Evita por completo la duplicidad en identificadores de productos de forma automatizada.
+
+## Funcionalidades Implementadas
+* **Menú Interactivo por Consola:** Navegación limpia mediante elecciones numéricas robustecidas.
+* **Registro de Productos Controlado:** Validación estricta del patrón de código (`PROD-XXX`), nombres no vacíos, precios reales y cantidades enteras.
+* **Consulta de Inventario Dinámica:** Presentación tabulada y legible en pantalla con formateo a dos decimales de los valores monetarios.
+* **Actualización Segura de Existencias:** Capacidad de sumar o restar inventario de un ítem existente, impidiendo que el stock caiga en números negativos.
+* **Persistencia Local (CSV):** Guardado automático e inmediato tras cualquier modificación operativa, permitiendo la reanudación del estado del sistema en cada ejecución.
+* **Manejo Integral de Excepciones:** Bloques `try-except` ubicados en los puntos de recolección de entradas para eludir la interrupción abrupta del software ante datos corruptos.
+
+## Instrucciones Básicas de Ejecución
+1. Asegúrese de contar con **Python 3.x** instalado en su terminal.
+2. Clone o descargue este repositorio en su entorno local.
+3. Abra una consola de comandos en la carpeta raíz del proyecto y ejecute:
+   ```bash
+   python inventario.py
+   ```
+4. El archivo de persistencia `inventario_productos.csv` se creará automáticamente en la primera transacción de guardado.
+
+## Integrantes del Equipo
+* *Insertar Nombre del Integrante 1*
+* *Insertar Nombre del Integrante 2*
+* *Insertar Nombre del Integrante 3*
